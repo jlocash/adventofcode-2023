@@ -1040,7 +1040,6 @@ fn is_number_prefix(s: &str) -> bool {
 struct NumberIterator<'a> {
     s: &'a str,
     start_idx: usize,
-    curr_word: String,
 }
 
 impl<'a> NumberIterator<'a> {
@@ -1048,7 +1047,6 @@ impl<'a> NumberIterator<'a> {
         Self {
             s,
             start_idx: 0,
-            curr_word: String::new(),
         }
     }
 }
